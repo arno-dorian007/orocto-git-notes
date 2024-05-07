@@ -1,0 +1,31 @@
+LETS TALK ABOUT MERGING BRANCHES
+ Now the term merging means combining the 2 branches. 
+ Now to do that, what we do is :
+ 1.) we move to the branch in which we want to merge,  
+    e.g. we wanna merge 1 branch to master/main, we first switch to the master/main branch
+ 2.) we run the merge command to merge the code from 1 branch to master/main
+    command -> git merge <branch_name>
+
+
+   VISUALIZING MERGES
+   we can use any GUI, like github desktop, or Gitkraken. 
+
+   ********* AN IMPORTANT PART
+   ********* MERGE CONFLICTS AND HOW TO RESOLVE THEM
+
+
+   MERGE CONFLICTS ARISE WHEN THERE ARE 2 CHANGES IN THE SAME FILE, THEN GIT DOES NOT ABLE
+   TO MERGE, THAT'S WHERE MERGE CONFLICT COME AND YOU HAVE TO RESOLVE THEM MANUALLY
+
+There are a few things to have a look ->
+
+<<<<<<<<< HEAD
+
+==========
+
+>>>>>>>>>>>> branch-name
+
+REMEMBER THAT THE CONTENT FROM THE BRANCH YOU ARE TRYING TO MERGE FROM IS DISPLAYED BETWEEN =========== AND >>>>>>>>>> SYMBOLS
+
+The Green part means that what we have in the branch ourselves and the Blue part means what we are getting from the Incoming branch,
+means when we try to merge or rebase

@@ -1,0 +1,31 @@
+Git is a most popular version control system, vcs.
+
+What is Version Control??
+It is a software that tracks and manages changes to a file/files over time.
+
+Now git is one the many version control systems. Some other ones are ->
+Subversion, CVS and mercurial. 
+but out of all, git is the clear winner.
+As per the stackoverflow survey, the Users for 
+GIT - 95.24%
+TFS - 16.6%
+Subversion - 11.3% and so on.
+
+OFFICIAL WEBSITE
+It is a free and open source version control system designed to handle everything from small to a 
+large projects with speed and efficiency.
+
+Now the meaning of git is ->
+i.) Global Information Tracker
+ii.) Goddam Idiotic Truckload of crap.
+
+Difference between Git and Github
+GIT
+Git is a version control software that runs locally on your machine.
+You dont need to register for an account. You dont even need internet to run it
+You can even use git without github
+
+GITHUB
+Github is a service that hosts git repositories on the cloud and makes it easier to 
+collaborate with other people. Signup is required for github.
+It is an online place to share work that is done using git.

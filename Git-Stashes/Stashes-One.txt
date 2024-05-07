@@ -1,0 +1,36 @@
+ THE STASHING CONCEPT
+
+ The concept of stashing came into picture for a condition where suppose that me as a User is working
+  on a branch, and for some reason he/she needs to switch the branch immeditely but dont want the changes 
+  to come to the branch the user is switching. Thus git offers a concept of stashing.
+
+  the command -> git stash
+  This is the short command for -> 'git stash save'
+
+  TO CHECK FOR THE STASHES ->  'git stash show'
+  TO APPLY THE STASH -> 'git stash pop' 
+  -> THIS POP WILL APPPLY THE STASH AND CLEAR FROM THE STASH LIST
+  or 'git stash apply'
+  -> THIS WILL JUST APPLY THE STASH BUT NOT POP THE STASH
+
+  Now to remove the most recent stash -> 'git stash clear'
+
+
+  AN IMPORTANT THING, WORKING WITH MULTIPLE STASHES
+  Suppose that we have multiple stashes, and now what we want is we need to apply a specific stash,
+  so for that first of all, we need to check the list. 
+  The command is -> 'git stash list'
+
+  This will give output like This:
+  stash@{0}: WIP on rainbow: 2d9c584 Removed the background color
+  stash@{1}: WIP on rainbow: 2d9c584 Removed the background color
+  stash@{2}: WIP on rainbow: 2d9c584 Removed the background color
+
+  Now whichever stash you want to apply, you can use the command ->
+  git stash apply stash@{2} : 'git stash apply stash@{stashId}'
+
+
+  DROPPING THE STASHES
+
+    Dropping a particular stash -> 'git stash drop stash@{stashId}'
+    drop all the stashes -> 'git stash clear'

@@ -1,0 +1,49 @@
+BRANCHING IS A REALLY IMPORTANT PART FOR GIT,
+We Create branches to keep our code biffurcated from each other as multiple people work on the same project.
+
+
+The head is the branch which you are on; that is, the branch with your changes. 
+The base is the branch off which these changes are based. This is similar to the terminology used for git 
+rebase and git merge-base.
+
+
+git status -> Know the current status
+git branch -> tells about how many branches are there
+git branch <branch_name> -> e.g. git branch agoswami
+git switch branch_name
+there is also 1 similar, git checkout branch_name, but will get to know on later context
+
+To add file/files
+git add . -> Add all files
+git add fileOne.ext fileTwo.ext 
+AND THEN GIT COMMIT
+
+git commit --message "Commit message" or git commit -m "commit message", or
+
+THERE IS 1 MORE WAY TO DO BOTH ALTOGETHER
+git commit -a -m "Commit Message"
+
+OLD WAY TO CREATE AND SWITCH BRANCH
+git checkout -b <branch_name>
+
+ANOTHER WAY TO CREATE AND SWITCH A BRANCH IN ONE GO
+
+git switch -c <branch_name>
+
+
+
+DELETING A BRANCH
+git branch -d <branch_name>
+
+IF THIS DOES NOT WORK, USE THIS
+ git branch -D <branch_name> or git branch --delete --force <branch_name>
+
+--force is a forceful command to force
+
+NOW 1 IMPORTANT THING
+1.) To Delete a branch, you can be on any other branch but not on that branch itself
+2.) To Rename a branch, you have to be on that branch
+
+git branch -m newBranchName
+
+

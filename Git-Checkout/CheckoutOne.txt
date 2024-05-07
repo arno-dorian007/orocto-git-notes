@@ -1,0 +1,36 @@
+git checkout <commit-hash>
+This will move to a particular commit hash, and with the git checkout master,
+It will move to the master branch.
+
+NOW THERE IS ONE MORE WAY TO DO THE SAME, WHAT WE CAN DO IS WE CAN USE THE HEAD tilde(~) THING
+
+e.g. 'git log --oneline'
+This will give all the commit hashes with 7 digits like this :
+
+
+9e43acb (HEAD -> master) Split chapter 1 and 2 in 2 pieces
+e77d53c Removed some headlines for the Outline.txt file 1
+3774124 Added a few text for the Outline 2
+68bae50 Added a few more characters in characters.txt 3
+baf1bc0 Renamed from Gatsby to Catsby 4
+15b99b3 Added the Great Gatsby Novel Notes 5
+
+Now to move to a specific commit without using a commit hash with other command is :
+
+git checkout HEAD~1
+
+Now to go back where I actually was before all this, then the command is ->
+git switch -
+
+DISCARDING CHANGES WITH GIT CHECKOUT COMMAND
+
+Now suppose in any file what we have done is, we have added contents and we dont want to commit all those,
+like a million of those changes, then what we can do is checkout the HEAD, as HEAD is the point where
+we last committed.
+Command is -> ' git checkout HEAD fileName.fileExtension ' e.g. ' git checkout HEAD dog.txt '
+
+another version of this command is -> ' git checkout -- fileOne.txt fileTwo.txt '
+
+
+
+

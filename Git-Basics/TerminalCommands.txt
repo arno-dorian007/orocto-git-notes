@@ -1,0 +1,35 @@
+ls -> list
+open . -> this opens an explorer window on a mac
+start . -> this opens an explorer window on a windows PC
+ls folderName -> This opens the list of all the elements in a folder
+pwd -> this prints the path where you currently are, it means print working directory
+cd directoryName -> This changes the directory, means moves from 1 folder to another
+cd .. -> Move backwards from the current directory
+touch fileName.fileExtension -> this will create a new file with the provided name and fileExtension
+touch fileName1.fileExtension fileName2.fileExtension -> this will create 2 or how many files user wants to create.
+
+TOUCH IS USED TO MAKE NEW FILES, How ABOUT NEW FOLDERS
+TO MAKE A NEW FOLDER, DIRECTORY WE CALL IT,
+mkdir directoryName -> To create a new directory/folder
+
+NOW LETS TALK ABOUT DELETING THE FILES
+
+rm fileName.fileExtension -> This will remove the files, this works relatively, means you need to reach to the 
+    location to delete a file
+
+    rm fileName.fileExtension -> e.g. rm TextNotes.TextNotes
+    ALWAYS BE CAREFUL AS THIS REMOVES THE FILE PERMANENTLY.
+
+    NOW LETS TALK ABOUT DELETING SOME FOLDERS
+    rm folderName will not work as to delete the folders, to delete the folder we need a more variation
+    rm -rf folderName
+    
+
+
+
+
+
+
+
+
+

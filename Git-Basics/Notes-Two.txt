@@ -1,0 +1,20 @@
+NOW LETS TALK ABOUT CONFIGURING THE USER CREDENTIALS ON YOUR MACHINE ONCE YOU HAVE THE GIT INSTALLED
+
+The official git website -> https://git-scm.com/
+
+Now once downloaded and installed, we need to configure our credentials to git.
+ There are a bunch of commands you can use :
+ 
+     List of all the config commands, all you need to do is open git bash and use the following commands
+     
+     git config --list -> List of all the config settings
+     
+     git config user.name  -> To check your username, if exists
+     git config --global user.name "FirstName LastName" -> To set a new userName
+     
+     git config user.email -> To check your email address, if exists
+     git config --global user.email "uservalidemail@gmail.com" -> To set a new userEmail
+     
+     git config user.password -> To check your password, if exists
+     git config --global user.password "your valid password"
+     

@@ -1,0 +1,16 @@
+GIT REVERT 
+
+This is a similar command like reset, but there is a major difference between these 2.
+
+NOW THE BASIC DIFFERENCE BETWEEN RESET AND REVERT IS :
+
+Suppose if you have used the Reset command, and we have reset the hash 2 commits before, then those 2 commits
+between will be lost, However with git revert, there is no such loss.
+Instead, It will create a new commit ahead of the reverted commit
+    Command -> ' git revert <commit_hash> '
+Now if you fire this command and make the changes, it will first ask to add some additional commit
+by opening VIM as default, where you can add a commit or the default will be the last commit.
+and when you save there will be a new commit but old commit wont be gone, it will be there as well.
+
+WHY DO WE DO THIS??
+This is for the collaboration

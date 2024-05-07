@@ -1,0 +1,1 @@
+The Git Diff commands tells the difference between the what you have changed in a file/files

@@ -1,0 +1,18 @@
+Now There could be some cases where the user needs to make sure that some of the files should not be 
+tracked by git, like the dependencies packages or such.
+
+Now we can achieve this behaviour easily by using a .gitignore file at the root of all the 
+files and simply add the files or directories(Folders) to make sure that these are not tracked by git.
+
+For e.g. ->
+
+Suppose there is a file that contains the details for the API KEYS That I dont want git to track,
+so in the .gitignore file, we can add a file like this ->
+
+API_KEYS.txt -> where API_KEYS is the file name
+node_modules/ -> This is the directory that has got the dependencies which should not be tracked and much more.
+
+Now there is a website you can use that helps to create the content for the project depending on the need
+ and the type of project you are working on.
+
+ https://www.toptal.com/developers/gitignore

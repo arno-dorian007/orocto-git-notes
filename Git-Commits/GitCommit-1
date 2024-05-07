@@ -1,0 +1,71 @@
+ATOMIC COMMITS
+
+Always keep your commits atomic, means a commit should encompass a single feature, change, or a fix.
+Means each commit should be focused on a single thing.
+The reason to do so is, it makes your code easy to rollback to previous commits.
+
+Now suppose there are 2 changes that you have made to a specific folder, and both the 2 changes are totally 
+different from each other.
+Then we add first commit for 1st change and then 1 more for the second change.
+
+Suppose we have 4 files that are changed, and 1 folder altogether. So First commit will be ->
+ git add Chapter1.txt Chapter2.txt Characters.txt Outline.txt
+
+ and another will be ->
+ Suppose there is a folder with the name Moodboard and this folder lets say contains files
+ with names like ImageOne.jpg, ImageTwo.jpg
+
+ Then You can add individual files like this -> git add ImageOne.jpg ImageTwo.jpg or
+ you can add the entire folder altogether -> git add Moodboard
+
+ A SPECIAL CASE
+ Suppose that by mistake you come into a situation where you just run this command ->
+ git add . and then
+ git commit (WITHOUT ANY COMMIT MESSAGE), This will open VIM and its really confusing how to get out of it.
+
+ to Get out of this, follow the process but before getting out, we need to save the changes by 
+ actually adding a commit message
+ 1.) press i
+ 2.) INSERT pops-up at the bottom
+ 3.) Cursor goes on top, add a commit message first
+ 4.) Press Esc key to get out of INSERT Mode
+ 5.) :wq 
+ 6.) You get out of the VIM, w means write to save the commit, q means quit
+
+ 1 Important thing, suppose you want to see the 1 line of each of the commits you have been making so far,
+ you can use this command ->
+ git log --oneline
+ THIS WILL RETURN 1 LINE OF ALL THE COMMITS
+
+
+AMMENDING COMMITS
+Consider a case where suppose that you were adding few files for commit, lets say out of 5 you added 4 files,
+and by mistake, you forgot to add 1 file, now you can add the file to the same commit by ammend command
+
+All you have to do is, add the file to move to staging area and then -> git commit --amend
+AND NOW YOU CAN ADD THE FILE TO THE SAME COMMIT THAT YOU MADE JUST A MOMENT AGO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

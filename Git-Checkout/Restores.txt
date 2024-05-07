@@ -1,0 +1,56 @@
+The git restore is a new command in git better than checkout.
+Now what this restore command does is, it sets the commits back to where the HEAD is,
+The command -> ' git restore fileName.fileExtension ' e.g. ' git restore Details.txt '
+
+This branch is way too much funky when it comes to restoring the changes to some older commits, 
+as the command gets really irritating.
+The command is - ' git restore --source HEAD~2 fileName.fileExtension '
+
+always remember that in git logs, the flow is like this -> 0, 1, 2, 3 and so on....
+
+THE GOOD THING IS, WE DONT GET THAT DETAHCED HEAD THING IN THIS CASE.
+
+
+AN IMPORTANT PART, UNSTAGING CHANGES WITH THE GIT RESTORE COMMAND
+Let's consider a case where we have added a file and by-mistake moved that file to a staging area, 
+means ' git add . '. Now what I want is, we realise that we have made a mistake, so what to do now.
+What we can do now is, we can use the restor command
+
+The command is -> ' git restore --staged fileName.fileExtension ' e.g. ' git restore --staged Secrets.txt '
+
+This will move the files back to the unstaged area.
+
+Now this is a bit confusing as what does this command does with git status.
+
+THE GOOD THING IS -> WHEN YOU FIRE THE ' git status ', IT WILL TELL WHAT EXACTLY WHAT WE NEED TO DO
+
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage) --THIS TELLS THE COMMAND TO STAGE
+        modified:   Cat.txt
+        modified:   Dog.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed) --THIS TELLS THE COMMAND TO ADD
+        SECRETS.txt
+
+NOW ONE IMPORTANT THING THAT WE NEED TO UNDERSTAND, SUPPOSE I AM WORKING ON SOME CODE,
+AND WHAT HAPPENED IS, BY MISTAKE I HAVE MADE A COMMIT ON THE MAIN BRANCH AND I WISH TO UNDO THA, 
+WE CAN DO THAT, THERE ARE 2 VARITIES OF THIS
+
+i.) REGULAR RESET
+ii.) HARD RESET
+
+REGULAR RESET
+The command is -> ' git reset <commit_hash> ', e.g. ' git reset a942311'
+
+NOW ONCE YOU HAVE FIRED THIS COMMAND, YOU MIGHT THINK THAT CHANGES ARE MADE, BUT IT WONT ACTUALLY.
+THE REGULAR RESET WILL SIMPLY JUST REMOVE THE COMMIT BUT THE CONTENT WILL BE THERE, SO WE LOOSE THE COMMITS
+BUT NOT THE CHANGES. THE CHANGES ARE NOT ON THE MAIN/MASTER SO YOU CAN TAKE THEM WITH YOURSELF.
+ 
+NOW IF YOU WANT TO RESET THE CHANGES, WE HAVE TO HARD RESET
+' git reset --hard <commit-hash> '
+THIS WILL REMOVE THE COMMIT HASH ALONG WITH THE CHANGES
+ALSO THIS COMMIT WILL MAKE THE COMMIT WHATEVER YOU HAVE FIRED TO THE LAST COMMIT.
+
